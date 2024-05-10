@@ -21,7 +21,7 @@ const HomePage = () => {
         >
           Discover Your <br /> Dream Job here
         </h1>
-        <p className="text-center text-xs mt-6">
+        <p className="text-center text-xs mt-6 text-black font-medium">
           Explore all the existing job roles based on your <br /> interest and
           study major
         </p>
@@ -30,9 +30,12 @@ const HomePage = () => {
         <PrimaryButton title="Login" />
         <OutlineButton title="Register" />
       </div>
+      <div className="h-[635px] w-[635px] rounded-full bg-[#F8F9FF] absolute top-[-400px] right-[-327] z-[-1] "></div>
       <div
-      
-        className="h-[635px] w-[635px] rounded-full bg-[#F8F9FF] absolute top-[-400px] right-[101px] z-[-1] "
+        style={{
+          border: "2px solid #F1F4FF",
+        }}
+        className="h-[372px] w-[372px] absolute rotate-45 top-[350px] right-[170px] z-[-1]"
       ></div>
     </div>
   );
