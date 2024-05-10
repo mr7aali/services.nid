@@ -3,10 +3,11 @@ import HomePageImage from "@/../../public/Images/home_page_image.png";
 import Image from "next/image";
 import PrimaryButton from "../Sheared/Button/PrimaryButton";
 import OutlineButton from "../Sheared/Button/OutlineButton";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <div  className="my-12 px-5 h-screen relative">
+    <div style={{border:"1px solid red"}}  className="my-12 px-5 h-full relative">
       <Image
         className="z-10"
         height={422}
@@ -26,9 +27,10 @@ const HomePage = () => {
           study major
         </p>
       </div>
-      <div className="mt-20 absolute bottom-0">
-        <PrimaryButton title="Login" />
-        <OutlineButton title="Register" />
+      <div className="mt-20 mb-8">
+        <Link href={"/auth/login"}> <PrimaryButton title="Login" /></Link>
+        <Link href={"/auth/register"}>  <OutlineButton title="Register" /></Link>
+      
       </div>
       
     </div>
