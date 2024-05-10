@@ -6,7 +6,7 @@ import OutlineButton from "../Sheared/Button/OutlineButton";
 
 const HomePage = () => {
   return (
-    <div className="my-12 px-5 relative">
+    <div  className="my-12 px-5 h-screen relative">
       <Image
         className="z-10"
         height={422}
@@ -26,17 +26,11 @@ const HomePage = () => {
           study major
         </p>
       </div>
-      <div className="mt-20">
+      <div className="mt-20 absolute bottom-0">
         <PrimaryButton title="Login" />
         <OutlineButton title="Register" />
       </div>
-      <div className="h-[635px] w-[635px] rounded-full bg-[#F8F9FF] absolute top-[-400px] right-[-327] z-[-1] "></div>
-      <div
-        style={{
-          border: "2px solid #F1F4FF",
-        }}
-        className="h-[372px] w-[372px] absolute rotate-45 top-[350px] right-[170px] z-[-1]"
-      ></div>
+      
     </div>
   );
 };
