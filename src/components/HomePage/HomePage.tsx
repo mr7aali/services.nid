@@ -27,7 +27,7 @@ const HomePage = () => {
           study major
         </p>
       </div>
-      <div className="mt-20 mb-8">
+      <div className="mt-20 mb-8 grid grid-cols-2 gap-2">
         <Link href={"/auth/login"}> <PrimaryButton title="Login" /></Link>
         <Link href={"/auth/register"}>  <OutlineButton title="Register" /></Link>
       

@@ -1,6 +1,6 @@
 const PrimaryButton = ({ title }: { title: string }) => {
   return (
-    <span className="py-4 px-16 rounded-lg font-bold bg-[#1F41BB] text-white">
+    <span className="py-[15px] rounded-lg font-bold bg-[#1F41BB] text-white w-full block text-center">
       {title}
     </span>
   );
