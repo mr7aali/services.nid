@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <div style={{border:"1px solid red"}}  className="my-12 px-5 h-full relative">
+    <div   className="my-12 px-5 h-full relative">
       <Image
         className="z-10"
         height={422}
