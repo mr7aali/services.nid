@@ -5,7 +5,7 @@ import IconGoogle from "../Sheared/Icon/IconGoogle";
 import IconFacebook from "../Sheared/Icon/IconFacebook";
 import IconApple from "../Sheared/Icon/IconApple";
 
-const LoginPage = () => {
+const RegisterPage = () => {
   const IconComponent = [
     <IconGoogle key={0} />,
     <IconFacebook key={1} />,
@@ -16,12 +16,12 @@ const LoginPage = () => {
       <div className="mt -24">
         <h1
           style={{ lineHeight: "1.4" }}
-          className="text-center text-[#1F41BB] text-3xl font-extrabold drop-shadow-2xl"
+          className="text-center  text-[#1F41BB] text-3xl font-extrabold drop-shadow-2xl"
         >
-          Login here
+          Create Account
         </h1>
-        <p className="text-center text-xl font-semibold mt-6 text-black font-medium">
-          Welcome back <br /> you’ve been missed!
+        <p className="text-center text-xl  mt-6 text-black font-medium">
+          Create an account so you can explore all the existing jobs
         </p>
       </div>
       <form action="" method="get">
@@ -47,7 +47,7 @@ const LoginPage = () => {
               outlineColor: "#1F41BB",
             }}
             className=" bg-[#F1F4FF] rounded-lg text-[16px] px-[15px] py-[15px] "
-            placeholder="Input your email"
+            placeholder="Type your email"
             type="email"
           />
         </div>
@@ -60,18 +60,18 @@ const LoginPage = () => {
               outlineColor: "#1F41BB",
             }}
             className=" bg-[#F1F4FF] rounded-lg text-[16px] px-[15px] py-[15px] "
-            placeholder="Input your password"
+            placeholder="Type your password"
           />
-        </div> 
+        </div>
         <p className="text-right my-7 cursor-pointer text-[#1F41BB] font-semibold underline text-[14px]">
           Forgot your password?
         </p>
         <div className="grid gap-3">
           <button type="submit">
-            <PrimaryButton title="Sign In" />
+            <PrimaryButton title="Register" />
           </button>
-          <Link href={"/auth/register"}>
-            <OutlineButton title="Create new account" />
+          <Link href={"/auth/login"}>
+            <OutlineButton title="Already have an account" />
           </Link>
         </div>
       </form>
@@ -92,4 +92,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
