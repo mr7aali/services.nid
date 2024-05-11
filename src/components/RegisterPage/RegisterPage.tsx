@@ -20,8 +20,8 @@ const RegisterPage = () => {
         >
           Create Account
         </h1>
-        <p className="text-center text-xl  mt-6 text-black font-medium">
-          Create an account so you can explore all the existing jobs
+        <p className="text-center text-[16px]  my-2 text-black font-medium">
+        Register to Exercise Your Democratic Right: Join Us in Shaping the Future Together
         </p>
       </div>
       <form action="" method="get">
@@ -64,7 +64,7 @@ const RegisterPage = () => {
           />
         </div>
         <p className="text-right my-7 cursor-pointer text-[#1F41BB] font-semibold underline text-[14px]">
-          Forgot your password?
+        Is your password strong enough?
         </p>
         <div className="grid gap-3">
           <button type="submit">

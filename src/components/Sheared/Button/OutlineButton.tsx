@@ -1,6 +1,10 @@
-const OutlineButton = ({title}:{title:string}) => {
+const OutlineButton = ({ title, color }: { title: string; color?: string }) => {
+  const buttonColor = color ? color : "#1F41BB";
   return (
-    <span style={{border:"2px solid #1F41BB"}} className="py-[13px]  rounded-lg font-bold  text-[0A0A0A] block text-center">
+    <span
+      style={{ border: `2px solid ${buttonColor}`, color: buttonColor }}
+      className={`py-[13px]  rounded-lg font-bold block text-center cursor-pointer`}
+    >
       {title}
     </span>
   );
