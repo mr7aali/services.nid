@@ -7,7 +7,7 @@ import { Item } from "./Item";
 // import Item from "./Item";
 // import { Item } from "./Item";
 
-const initialItems = ["🍅 Tomato", "🥒 Cucumber", "🧀 Cheese", "🥬 Lettuce"];
+const initialItems = ["🍅 Candidate 1", "🥒 Candidate 2", "🧀 Candidate 3", "🥬 Candidate 4"];
 
 export default function CandidateOption() {
   const [items, setItems] = useState(initialItems);
